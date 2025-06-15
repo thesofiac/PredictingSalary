@@ -201,21 +201,22 @@ elif menu == "Calcule o salário a ser ofertado":
 
     f1 = '0'
     f2 = st.text_area("Título da Vaga")
-    f3 = st.text_area("Descrição da Vaga")
-    f4 = st.number_input("Avaliação da Empresa", value=0.0)
-    f5 = st.text_area("Nome da Empresa")
-    f6 = st.selectbox("Estado da Empresa", states_options) 
-    f7 = '0'
-    f8 = st.selectbox("Tamanho da Empresa", sizes_options)
-    f9 = '0'
+    f3 = '$53K-$91K'
+    f4 = st.text_area("Descrição da Vaga")
+    f5 = st.number_input("Avaliação da Empresa", value=0.0)
+    f6 = st.text_area("Nome da Empresa")
+    f7 = st.selectbox("Estado da Empresa", states_options) 
+    f8 = '0'
+    f9 = st.selectbox("Tamanho da Empresa", sizes_options)
     f10 = '0'
-    f11 = st.selectbox("Área da Empresa", industry_options)
-    f12 = '0'
+    f11 = '0'
+    f12 = st.selectbox("Área da Empresa", industry_options)
     f13 = '0'
     f14 = '0'
+    f15 = '0'
 
     if st.button("Prever"):
-        input_df = pd.DataFrame([[str(f1), str(f2), str(f3), float(f4), str(f5), str(f6), str(f7), dic_sizes[f8], str(f9), str(f10), dic_industry[f11], str(f12), str(f13), str(f14)]], columns=['Unnamed: 0', 'Job Title', 'Salary Estimate', 'Job Description', 'Rating', 'Company Name', 'Location', 'Headquarters', 'Size', 'Founded', 'Type of ownership', 'Industry', 'Sector', 'Revenue', 'Competitors'])
+        input_df = pd.DataFrame([[str(f1), str(f2), str(f5), str(f4), float(f5), str(f6), str(f7), str(f8), dic_sizes[f9], str(f10), str(f11), dic_industry[f12], str(f13), str(f14), str(f15)]], columns=['Unnamed: 0', 'Job Title', 'Salary Estimate', 'Job Description', 'Rating', 'Company Name', 'Location', 'Headquarters', 'Size', 'Founded', 'Type of ownership', 'Industry', 'Sector', 'Revenue', 'Competitors'])
         X, y = treat_columns(input_df)
         y_pred = model.predict(X)
         st.write(f"O salário estimado para essa vaga é: ${y_pred[0]:.0f}")
