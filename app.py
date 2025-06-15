@@ -39,12 +39,12 @@ def treat_columns(df):
 
     top_words = ['scientist', 'data', 'engineer', 'senior', 'analyst', 'sr', 'analytics']
 
-    df['Filtered Titles'] = df['Job Title'].apply(filtrar_palavras)
+    df['Filtered Titles'] = df['Job Title'].apply(lambda x: filtrar_palavras(x, top_words))
     df = df.drop('Job Title', axis=1)
 
     top_words = ['data', 'experience', 'work', 'business', 'development', 'team', 'skills']
 
-    df['Filtered Description'] = df['Job Description'].apply(filtrar_palavras)
+    df['Filtered Description'] = df['Job Description'].apply(lambda x: filtrar_palavras(x, top_words))
     df = df.drop('Job Description', axis=1)
 
     df['salario_medio'] = df['Salary Estimate'].apply(extrair_media)
