@@ -7,7 +7,7 @@ from category_encoders import TargetEncoder
 from sklearn.preprocessing import StandardScaler
 import re
 
-def filtrar_palavras(texto):
+def filtrar_palavras(texto, top_words):
     palavras = [p.strip().lower() for p in re.split('[,\\s]+', texto) if p]
     relevantes = {p for p in palavras if p in top_words}
     return ', '.join(sorted(relevantes))
