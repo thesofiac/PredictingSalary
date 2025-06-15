@@ -216,7 +216,7 @@ elif menu == "Calcule o salário a ser ofertado":
     f15 = '0'
 
     if st.button("Prever"):
-        input_df = pd.DataFrame([[str(f1), str(f2), str(f5), str(f4), float(f5), str(f6), str(f7), str(f8), dic_sizes[f9], str(f10), str(f11), dic_industry[f12], str(f13), str(f14), str(f15)]], columns=['Unnamed: 0', 'Job Title', 'Salary Estimate', 'Job Description', 'Rating', 'Company Name', 'Location', 'Headquarters', 'Size', 'Founded', 'Type of ownership', 'Industry', 'Sector', 'Revenue', 'Competitors'])
+        input_df = pd.DataFrame([[str(f1), str(f2), str(f3), str(f4), float(f5), str(f6), str(f7), str(f8), dic_sizes[f9], str(f10), str(f11), dic_industry[f12], str(f13), str(f14), str(f15)]], columns=['Unnamed: 0', 'Job Title', 'Salary Estimate', 'Job Description', 'Rating', 'Company Name', 'Location', 'Headquarters', 'Size', 'Founded', 'Type of ownership', 'Industry', 'Sector', 'Revenue', 'Competitors'])
         X, y = treat_columns(input_df)
         y_pred = model.predict(X)
         st.write(f"O salário estimado para essa vaga é: ${y_pred[0]:.0f}")
