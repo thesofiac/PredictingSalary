@@ -172,8 +172,8 @@ if menu == "Entenda os dados":
         ax.plot(x_range, y_senior, marker='o', label='Sênior', color=cor_senior)
 
         # Labels nas linhas
-        ax.text(x_range[-1] + 0.05, y_nao_senior[-1], 'Não sênior', va='center', ha='left', fontsize=10, color=cor_nao_senior)
-        ax.text(x_range[-1] + 0.05, y_senior[-1], 'Sênior', va='center', ha='left', fontsize=10, color=cor_senior)
+        ax.text(x_range[-1] + 0.05, y_nao_senior[-1], 'Não sênior', va='center', ha='left', fontsize=12, color=cor_nao_senior)
+        ax.text(x_range[-1] + 0.05, y_senior[-1], 'Sênior', va='center', ha='left', fontsize=12, color=cor_senior)
 
         for i in x_range:
             y_diff = y_senior[i] - y_nao_senior[i]
@@ -195,7 +195,7 @@ if menu == "Entenda os dados":
         st.pyplot(fig)
 
     with col4:
-        st.markdown("<br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
+        st.markdown("<br><br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
         
         st.markdown("<h5>Os analistas de dados são os que têm <span style='color:#E07A5F;'>maior aumento de salário</span> ao se tornarem sêniors</h5>", unsafe_allow_html=True)
         
