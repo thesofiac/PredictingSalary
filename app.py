@@ -136,7 +136,7 @@ if menu == "Entenda os dados":
 
     with col1:
         st.markdown("<h5>O salário anual médio ofertado é</h5>", unsafe_allow_html=True)
-        st.markdown("<h3><span style='color:#E07A5F;'>$78k<\span></h3>", unsafe_allow_html=True)
+        st.markdown("<h3><span style='color:#E07A5F;'>$78k</span></h3>", unsafe_allow_html=True)
 
     with col2:
         st.markdown("<h5>Entre os profissionais da área de dados, os <br>Cientistas de Dados são os que recebem melhor, <br>seguidos dos Engenheiros de Dados e Analistas de Dados.</h5>", unsafe_allow_html=True)
