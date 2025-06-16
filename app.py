@@ -135,9 +135,8 @@ if menu == "Entenda os dados":
     col1, col2 = st.columns([1, 1])
 
     with col1:
-        st.markdown("<h5>O salário médio ofertado é</h5>", unsafe_allow_html=True)
-        st.markdown("<h3>$78k</h3>", unsafe_allow_html=True)
-        st.markdown("<h5>anuais</h5>", unsafe_allow_html=True)
+        st.markdown("<h5>O salário anual médio ofertado é</h5>", unsafe_allow_html=True)
+        st.markdown("<h3><span style='color:#E07A5F;'>$78k<\span></h3>", unsafe_allow_html=True)
 
     with col2:
         st.markdown("<h5>Entre os profissionais da área de dados, os <br>Cientistas de Dados são os que recebem melhor, <br>seguidos dos Engenheiros de Dados e Analistas de Dados.</h5>", unsafe_allow_html=True)
@@ -147,7 +146,7 @@ if menu == "Entenda os dados":
     col3, col4 = st.columns([1.5, 1])
 
     with col3:
-        st.markdown("<h5>    Candidatos que <span style='color:#E07A5F;'>saíram do <br>     seu último emprego há mais tempo</span>, <br>     têm <span style='color:#E07A5F;'><b>menor chance</b></span> de trocar de emprego</h5>", unsafe_allow_html=True)
+        st.markdown("<h5>Candidatos que <span style='color:#E07A5F;'>saíram do <br> seu último emprego há mais tempo</span>, <br> têm <span style='color:#E07A5F;'><b>menor chance</b></span> de trocar de emprego</h5>", unsafe_allow_html=True)
 
         # Dados
         x = ['Cientista\nde Dados', 'Engenheiro\nde Dados', 'Analista\nde Dados']
