@@ -178,7 +178,7 @@ if menu == "Entenda os dados":
         for i in x_range:
             y_diff = y_senior[i] - y_nao_senior[i]
             y_medio = (y_senior[i] + y_nao_senior[i]) / 2
-            ax.text(i + 0.03, y_medio, f'${y_diff}k', va='center', ha='left', fontsize=10, color='gray')
+            ax.text(i + 0.03, y_medio, f'${y_diff}k', va='center', ha='left', fontsize=14, color='gray')
 
         # Ajustes de eixos
         ax.set_ylabel('Salário Anual')
@@ -195,7 +195,7 @@ if menu == "Entenda os dados":
         st.pyplot(fig)
 
     with col4:
-        st.markdown("<br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
+        st.markdown("<br><br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
         
         st.markdown("<h5>Os analistas de dados <br> são os que têm <span style='color:#E07A5F;'>maior aumento</span><br> de salário ao se tornarem sêniors</h5>", unsafe_allow_html=True)
         
