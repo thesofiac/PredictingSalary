@@ -178,7 +178,7 @@ if menu == "Entenda os dados":
         for i in x_range:
             y_diff = y_senior[i] - y_nao_senior[i]
             y_medio = (y_senior[i] + y_nao_senior[i]) / 2
-            ax.text(i + 0.03, y_medio, f'${y_diff}k', va='center', ha='left', fontsize=14, color='gray')
+            ax.text(i + 0.03, y_medio, f'${y_diff}k', va='center', ha='left', fontsize=13, color='gray')
 
         # Ajustes de eixos
         ax.set_ylabel('Salário Anual')
