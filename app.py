@@ -128,7 +128,7 @@ if menu == "Entenda os dados":
 
     st.markdown("<br>", unsafe_allow_html=True)
     
-    st.markdown("<div style='text-align: justify'><h5>Assim, foi determinado um modelo de regressão XXX, que mostrou RMSE médio de XXX para dados nunca vistos pelo modelo (valor obtido do croos-validation com cv=XXX para o conjunto geral dos dados). Por conta do <i>target</i> se tratar de salários estimados, na forma de <span style='color:#E07A5F;'>ranges</span> e não valores exatos, já era de se esperar grande variação e maior dificuldade para traçar um modelo que acertasse todas as previsões. Ainda assim, é de se considerar como bom o desempenho do modelo, já que servirá apenas de ponto de partida para negociações salariais e não como valor final.</h5></div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: justify'><h5>Assim, foi determinado o modelo de regressão RandomForestRegressor(bootstrap=True, max_depth=15, max_features='sqrt', min_samples_leaf=2, min_samples_split=5, n_estimators=200, random_state=42), que mostrou RMSE médio de $11k para dados nunca vistos pelo modelo (valor obtido do croos-validation com cv=5 para o conjunto geral dos dados). Pelo <i>target</i> se tratar de salários estimados, na forma de <span style='color:#E07A5F;'>ranges</span> e não valores exatos, já era de se esperar grande variação e maior dificuldade para traçar um modelo que acertasse todas as previsões. Ainda assim, é de se considerar como bom o desempenho do modelo, já que servirá apenas de ponto de partida para negociações salariais.</h5></div>", unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
     
@@ -148,7 +148,7 @@ if menu == "Entenda os dados":
         st.markdown("<h5>Candidatos que <span style='color:#E07A5F;'>saíram do <br> seu último emprego há mais tempo</span>, <br> têm <span style='color:#E07A5F;'><b>menor chance</b></span> de trocar de emprego</h5>", unsafe_allow_html=True)
 
         # Dados
-        x = ['Cientista de Dados', 'Engenheiro de Dados', 'Analista de Dados']
+        x = ['Cientista\nde Dados', 'Engenheiro\nde Dados', 'Analista\nde Dados']
         x_range = range(len(x))
 
         y_todos = [92, 83, 58]
@@ -182,8 +182,11 @@ if menu == "Entenda os dados":
 
         # Ajustes de eixos
         ax.set_ylabel('Salário Anual')
+        x_labels = ['Cientista\nde Dados', 'Engenheiro\nde Dados', 'Analista\nde Dados']
         ax.set_xticks(x_range)
-        ax.set_xticklabels(x)
+        ax.set_xticklabels(x_labels, fontsize=12)
+        ax.set_ylabel('Salário Anual', fontsize=14)
+        ax.tick_params(axis='y', labelsize=12)
         ax.set_xlim(-0.05, len(x) - 0.7)
         ax.set_ylim(50, 120)
         ax.set_yticks([])
