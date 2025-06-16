@@ -135,7 +135,9 @@ if menu == "Entenda os dados":
     col1, col2 = st.columns([1, 1])
 
     with col1:
-        st.markdown("<h5>O salário médio ofertado é <br>$78K<br> anuais.</h5>", unsafe_allow_html=True)
+        st.markdown("<h5>O salário médio ofertado é<br></h5>", unsafe_allow_html=True)
+        st.markdown("<h3>$78k<br></h3>", unsafe_allow_html=True)
+        st.markdown("<h5>anuais.</h5>", unsafe_allow_html=True)
 
     with col2:
         st.markdown("<h5>Entre os profissionais da área de dados, os <br>Cientistas de Dados são os que recebem melhor, <br>seguidos dos Engenheiros de Dados e Analistas de Dados.</h5>", unsafe_allow_html=True)
