@@ -195,7 +195,7 @@ if menu == "Entenda os dados":
         st.pyplot(fig)
 
     with col4:
-        st.markdown("<br><br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
+        st.markdown("<br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
         
         st.markdown("<h5>Os analistas de dados <br> são os que têm <span style='color:#E07A5F;'>maior aumento</span><br> de salário ao se tornarem sêniors</h5>", unsafe_allow_html=True)
         
