@@ -139,7 +139,7 @@ if menu == "Entenda os dados":
         st.markdown("<h3><span style='color:#E07A5F;'>$78k</span></h3>", unsafe_allow_html=True)
 
     with col2:
-        st.markdown("<h5>Os <span style='color:#E07A5F;'>Cientistas de Dados</span><br> são os que recebem melhor, <br>seguidos dos <span style='color:#E07A5F;'>Engenheiros</span> de <br>Dados e <span style='color:#E07A5F;'>Analistas</span> de Dados.</h5>", unsafe_allow_html=True)
+        st.markdown("<h5>Os <span style='color:#E07A5F;'>Cientistas de Dados</span><br> são os que recebem melhor, seguidos <br> dos <span style='color:#E07A5F;'>Engenheiros</span> e <span style='color:#E07A5F;'>Analistas</span> de Dados.</h5>", unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
     
