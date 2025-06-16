@@ -124,7 +124,7 @@ if menu == "Entenda os dados":
     st.subheader("Entenda os dados")
     st.markdown("<br>", unsafe_allow_html=True)
 
-    st.markdown("<div style='text-align: justify'><h5>Os dados são referentes a vagas da área de dados e empresas avaliadas no <i>site</i> do Glassdoor. <br> Para cada uma das vagas, é possível obter: <br><br> - O título e descrição da vaga <br> - Nome, setor e avaliação da empresa. <br> - Salário <span style='color:#E07A5F;'>Estimado</span></h5></div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: justify'><h5>Os dados são referentes a <span style='color:#E07A5F;'>vagas</span> da área de dados e empresas avaliadas no <i>site</i> do Glassdoor. Para cada uma das vagas, é possível obter: <br><br> - O título e descrição da vaga <br> - Nome, setor e avaliação da empresa. <br> - Salário <span style='color:#E07A5F;'>Estimado</span></h5></div>", unsafe_allow_html=True)
     st.markdown("<div style='text-align: justify'><h5>Desenvolver um modelo de regressão ou classificação que ajude as empresas a estimar o salário que deve ser oferecido em seus anúncios de vagas é interessante, tanto para que não paguem muito a mais que a média do mercado em salários, quanto para que não percam talentos oferecendo salários muito baixos.</h5></div>", unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
