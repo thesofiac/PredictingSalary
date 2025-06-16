@@ -145,7 +145,7 @@ if menu == "Entenda os dados":
     col3, col4 = st.columns([1.5, 1])
 
     with col3:
-        st.markdown("<h5>Candidatos que <span style='color:#E07A5F;'>saíram do <br> seu último emprego há mais tempo</span>, <br> têm <span style='color:#E07A5F;'><b>menor chance</b></span> de trocar de emprego</h5>", unsafe_allow_html=True)
+        st.markdown("<h5>    Candidatos que <span style='color:#E07A5F;'>saíram do <br>     seu último emprego há mais tempo</span>, <br>     têm <span style='color:#E07A5F;'><b>menor chance</b></span> de trocar de emprego</h5>", unsafe_allow_html=True)
 
         # Dados
         x = ['Cientista\nde Dados', 'Engenheiro\nde Dados', 'Analista\nde Dados']
@@ -197,7 +197,7 @@ if menu == "Entenda os dados":
     with col4:
         st.markdown("<br><br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
         
-        st.markdown("<h5>Os analistas de dados são os que têm <span style='color:#E07A5F;'>maior aumento de salário</span> ao se tornarem sêniors</h5>", unsafe_allow_html=True)
+        st.markdown("<h5>Os analistas de dados <br> são os que têm <span style='color:#E07A5F;'>maior aumento</span><br> de salário ao se tornarem sêniors</h5>", unsafe_allow_html=True)
         
 elif menu == "Calcule o salário a ser ofertado":
     st.subheader("Calcule o salário a ser ofertado")
