@@ -172,8 +172,8 @@ if menu == "Entenda os dados":
         ax.plot(x_range, y_senior, marker='o', label='Sênior', color=cor_senior)
 
         # Labels nas linhas
-        ax.text(x_range[-1] + 0.05, y_nao_senior[-1], 'Não sênior', va='center', ha='left', fontsize=12, color=cor_nao_senior)
-        ax.text(x_range[-1] + 0.05, y_senior[-1], 'Sênior', va='center', ha='left', fontsize=12, color=cor_senior)
+        ax.text(x_range[-1] + 0.05, y_nao_senior[-1], 'Não\nsênior', va='center', ha='left', fontsize=14, color=cor_nao_senior)
+        ax.text(x_range[-1] + 0.05, y_senior[-1], 'Sênior', va='center', ha='left', fontsize=14, color=cor_senior)
 
         for i in x_range:
             y_diff = y_senior[i] - y_nao_senior[i]
@@ -184,9 +184,9 @@ if menu == "Entenda os dados":
         ax.set_ylabel('Salário Anual')
         x_labels = ['Cientista\nde Dados', 'Engenheiro\nde Dados', 'Analista\nde Dados']
         ax.set_xticks(x_range)
-        ax.set_xticklabels(x_labels, fontsize=12)
+        ax.set_xticklabels(x_labels, fontsize=14)
         ax.set_ylabel('Salário Anual', fontsize=14)
-        ax.tick_params(axis='y', labelsize=12)
+        ax.tick_params(axis='y', labelsize=14)
         ax.set_xlim(-0.05, len(x) - 0.7)
         ax.set_ylim(50, 120)
         ax.set_yticks([])
